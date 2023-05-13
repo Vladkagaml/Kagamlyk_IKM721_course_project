@@ -1,0 +1,11 @@
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.csproj.SuggestedBindingRedirects.cache
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM_721_coutse_project.Form1.resources
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM_721_coutse_project.Properties.Resources.resources
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\bin\Debug\Kagamlyk_IKM-721_coutse_project.exe.config
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\bin\Debug\Kagamlyk_IKM-721_coutse_project.exe
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\bin\Debug\Kagamlyk_IKM-721_coutse_project.pdb
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.exe
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.pdb
