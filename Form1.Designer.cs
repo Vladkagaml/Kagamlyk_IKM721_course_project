@@ -97,7 +97,7 @@
             this.довідкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1436, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1436, 40);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -123,7 +123,7 @@
             this.toolStripSeparator1,
             this.проНакоичувачіToolStripMenuItem});
             this.роботаToolStripMenuItem.Name = "роботаToolStripMenuItem";
-            this.роботаToolStripMenuItem.Size = new System.Drawing.Size(111, 38);
+            this.роботаToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
             this.роботаToolStripMenuItem.Text = "Робота";
             // 
             // довідкаToolStripMenuItem
@@ -183,7 +183,7 @@
             // 
             this.проНакоичувачіToolStripMenuItem.Name = "проНакоичувачіToolStripMenuItem";
             this.проНакоичувачіToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.проНакоичувачіToolStripMenuItem.Text = "Про накоичувачі";
+            this.проНакоичувачіToolStripMenuItem.Text = "Про накопичувачі";
             this.проНакоичувачіToolStripMenuItem.Click += new System.EventHandler(this.проНакоичувачіToolStripMenuItem_Click);
             // 
             // проПрограмуToolStripMenuItem
