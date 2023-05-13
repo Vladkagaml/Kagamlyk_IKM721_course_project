@@ -10,6 +10,7 @@ namespace Kagamlyk_IKM_721_coutse_project
     {
         // Вміст робочого об'єкта
         // Поля
+        private System.DateTime TimeBegin; // час початку роботи програми
         private string Data; //вхідні дані
         private string Result; // Поле результату
                                // Методи
@@ -21,6 +22,18 @@ namespace Kagamlyk_IKM_721_coutse_project
         {
             return this.Result;// метод відображення результату
         }
+        public void SetTime() // метод запису часу початку роботи програми
+        {
+            this.TimeBegin = System.DateTime.Now;
+        }
+        public System.DateTime GetTime() // Метод отримання часу завершення програми
+        {
+            return this.TimeBegin;
+        }
+
+
+
+
         public void Task() // метод реалізації програмного завдання
         {
             if (this.Data.Length > 5)
