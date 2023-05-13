@@ -9,3 +9,4 @@
 \\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\bin\Debug\Kagamlyk_IKM-721_coutse_project.pdb
 \\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.exe
 \\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM-721_coutse_project.pdb
+\\Mac\Home\Desktop\vlad\Kagamlyk_IKM-721_coutse_project\obj\Debug\Kagamlyk_IKM_721_coutse_project.About.resources
