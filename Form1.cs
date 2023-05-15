@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using System.IO;
+using System.IO.Ports;
 namespace Kagamlyk_IKM_721_coutse_project
 {
     public partial class Form1 : Form
@@ -59,6 +60,12 @@ namespace Kagamlyk_IKM_721_coutse_project
 
             toolTip1.SetToolTip(bSearch, "Натисніть на кнопку для пошуку");
             toolTip1.IsBalloon = true;
+            // отримуємо список СОМ портов системи
+            string[] ports = SerialPort.GetPortNames();
+            foreach (string port in ports)
+            {
+                comboBox1.Items.Add(port);
+            };
         }
 
         private void bStart_Click(object sender, EventArgs e)
@@ -356,6 +363,87 @@ TXT(*.txt)|*.txt|CSV-файл (*.csv)|*.csv|Bin-файл (*.bin)|*.bin";
             if (o.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.Text = File.ReadAllText(o.FileName, Encoding.Default);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "Старт")
+
+            {
+                if (port.IsOpen) port.Close();
+                #region Задаем параметры порта
+                port.PortName = comboBox1.Text;
+                port.BaudRate = Convert.ToInt32(comboBox2.Text);
+                port.DataBits = Convert.ToInt32(comboBox3.Text);
+                switch (comboBox4.Text)
+                {
+                    case "Пробел":
+                        port.Parity = Parity.Space;
+                        break;
+                    case "Чет":
+                        port.Parity = Parity.Even;
+                        break;
+                    case "Нечет":
+                        port.Parity = Parity.Odd;
+                        break;
+                    case "Маркер":
+                        port.Parity = Parity.Mark;
+                        break;
+                    default:
+                        port.Parity = Parity.None;
+                        break;
+                }
+                switch (comboBox5.Text)
+                {
+                    case "2":
+                        port.StopBits = StopBits.Two;
+                        break;
+                    case "1.5":
+                        port.StopBits = StopBits.OnePointFive;
+                        break;
+                    case "Нет":
+                        port.StopBits = StopBits.None;
+                        break;
+
+                    default:
+                        port.StopBits = StopBits.One;
+                        break;
+                }
+                switch (comboBox6.Text)
+                {
+                    case "Xon/Xoff":
+                        port.Handshake = Handshake.XOnXOff;
+                        break;
+                    case "Аппаратное":
+                        port.Handshake = Handshake.RequestToSend;
+                        break;
+                    default:
+                        port.Handshake = Handshake.None;
+                        break;
+                }
+                #endregion
+                try
+                {
+                    port.Open();
+                    button2.Text = "Стоп";
+                    // button2.Enabled = false;
+                }
+                catch
+                {
+                    MessageBox.Show("Порт " + port.PortName + " неможливо відкрити!",
+
+                    "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    comboBox1.SelectedText = "";
+                    button2.Text = "Старт";
+                }
+            }
+            else
+            {
+                if (port.IsOpen) port.Close();
+                button2.Text = "Старт";
+              
             }
         }
     }
